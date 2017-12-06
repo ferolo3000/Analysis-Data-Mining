@@ -20,33 +20,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-******
-# Base teorica
-******
-
-Esta practica se basa en una de las aplicaciones de **algoritmos de clasificacion**, desarrolladas con **K-NN** y **arboles de decision**.  
 
 ******
 # Caso de estudio: ---  Clasificacion red de ventas Bodegas Mureda  ---
 ******
 Formamos parte de la Direccion Comercial de la Bodega de vinos **Mureda** y queremos analizar la actividad de nuestra red de ventas, formada por tres categorias de comerciales (A, B y C). Para ello, estamos interesados en conocer si existen diferencias en la actividad generada por cada uno de los comerciales y, en caso afirmativo, identificar cuales son las variables que mas contribuyen a dichas diferencias y si podemos predecir a que categoria de comercial pertenece un nuevo empleado en funcion de su actividad. 
-
-Para ello, nuestro equipo de analisis dispone de un fichero con informacion de 150 clientes que recoge estadisticas de actividad de los tres grupos de Comerciales, a razon de 50 registros por grupo de comercial. El fichero contiene informacion de las siguientes variables:  
-
-* _Importe_: Volumen de Facturacion en el Cliente (vinculado a una categoria de Comercial)  
-
-* _Margen_: Margen por Cliente (vinculado a una categoria de Comercial)  
-
-* _Km_: Kilometros recorridos para visitar al Cliente.
-
-* _Visitas_: Visitas realizadas al Cliente.
-
-* _Comercial_: Categoria de comercial asignada al cliente (Toma valores A, B o C)  
-
-
-
-Una vez definidos los objetivos de nuestra investigacion, nuestro departamento de analisis nos propone desarrollar un proceso de clasificacion que aplique tres tipos de algoritmos complementarios: K-NN, arboles de decision simples y arboles de clasificacion multiples (random forest) sobre nuestro fichero de datos.
-
 
 ******
 # Carga de paquetes y del fichero de datos
